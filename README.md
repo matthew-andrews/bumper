@@ -2,6 +2,10 @@
 
 Figures out what the current version of your git project is, bumps it, and tags the current commit with the new version.
 
+**It very intentionally does not commit the version number into `package.json` or `bower.json` or any other file.**  Can be used with  on its own as bower does not require you to commit the version number into `bower.json`.
+
+To use with npm you might like to use [npm-prepublish](https://github.com/matthew-andrews/npm-prepublish) which eliminates the need for commiting the version number into modules' `package.json` files.
+
 ## Installation
 
 ```
