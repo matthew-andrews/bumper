@@ -4,6 +4,10 @@
   "bin": {
     "bum": "bin/cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthew-andrews/bumper"
+  },
   "dependencies": {
     "commander": "^2.8.1",
     "denodeify": "^1.2.1",
