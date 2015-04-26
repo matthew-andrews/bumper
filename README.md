@@ -26,4 +26,4 @@ You can also bump the `minor`, `patch` and a number of other types.  See `bmpr -
 
 - `--verbose, -v` will give more information as to how **bumper** is working.
 - `--dry-run` will skip the tagging step.
-- `--message` optional message which gets added to the tag.
+- `--message, -m` optional message which gets added to the tag.
