@@ -12,7 +12,7 @@ To use with npm you might like to use [npm-prepublish](https://github.com/matthe
 npm install -g bum
 ```
 
-(All the good names were already taken)
+(Sorry, all the good names were already taken)
 
 ## Usage
 
