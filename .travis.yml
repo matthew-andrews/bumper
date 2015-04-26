@@ -1,0 +1,16 @@
+sudo: false
+language: node_js
+script: npm test
+node_js:
+- '0.12'
+before_deploy:
+- npm-prepublish --verbose
+deploy:
+  provider: npm
+  email: matt@mattandre.ws
+  api_key:
+    secure: r8/B3GPThiZTDJPykpebvI/o57osvNYE01wNBfU6uU1y+SOOCwPAqAnNPAM3CyWifKU5dDCMKfBLtnSB948o997uGk8ykkESGB1TfhjKkU/6sMlKWfKwRRELXR+J8Aztw5ysE5JutL03w3o566ZIF93W9+iH2b3oO7oXl/yjDHw=
+  on:
+    all_branches: true
+    tags: true
+    repo: matthew-andrews/bumper
