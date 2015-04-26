@@ -22,7 +22,7 @@ function setUpCommand(level) {
 			bump({
 				level: level,
 				message: opts.message,
-				dryRun: opts['dry-run']
+				dryRun: opts.dryRun
 			})
 				.catch(function(err) {
 					logger.error(err);
