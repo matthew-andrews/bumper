@@ -5,7 +5,7 @@ Figures out what the current version of your git project is, bumps it, and tags 
 ## Installation
 
 ```
-npm install bum
+npm install -g bum
 ```
 
 (All the good names were already taken)
