@@ -5,7 +5,7 @@ Figures out what the current version of your git project is, bumps it, and tags 
 ## Installation
 
 ```
-npm install -g bum
+npm install -g bmpr
 ```
 
 (All the good names were already taken)
@@ -15,10 +15,10 @@ npm install -g bum
 To bump the major version number:-
 
 ```
-bum major
+bmpr major
 ```
 
-You can also bump the `minor`, `patch` and a number of other types.  See `bum --help` for more details.
+You can also bump the `minor`, `patch` and a number of other types.  See `bmpr --help` for more details.
 
 ### Options
 

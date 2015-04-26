@@ -1,8 +1,8 @@
 {
-  "name": "bum",
+  "name": "bmpr",
   "version": "0.0.0",
   "bin": {
-    "bum": "bin/cli.js"
+    "bmpr": "bin/cli.js"
   },
   "repository": {
     "type": "git",
