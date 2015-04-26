@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
+require('es6-promise').polyfill();
 var program = require('commander');
 var bump = require('../lib/bump');
 
@@ -12,14 +13,23 @@ function setUpCommand(level) {
 		.description('bumps the ' + level + ' version')
 		.option('--dry-run', 'skips the tagging')
 		.option('-m --message <message>', 'add a message to the git tag')
+		.option('-v --verbose', 'show extended debug output')
 		.action(function(opts) {
-			console.log("will bump " + level);
+			bump({
+				level: level,
+				message: opts.message,
+				dryRun: opts['dry-run']
+			})
+				.catch(function(err) {
+					console.log(err);
+					process.exit(1);
+				});
 		});
 }
 
-setUpCommand('major');
-setUpCommand('minor');
-setUpCommand('patch');
+
+['major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease']
+	.forEach(function(command) { setUpCommand(command); });
 
 program.parse(process.argv);
 
