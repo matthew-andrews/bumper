@@ -8,7 +8,8 @@
     "commander": "^2.8.1",
     "denodeify": "^1.2.1",
     "es6-promise": "^2.1.1",
-    "semver": "^4.3.3"
+    "semver": "^4.3.3",
+    "winston": "^1.0.0"
   },
   "devDependencies": {
     "npm-prepublish": "^1.2.0"
