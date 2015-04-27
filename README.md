@@ -27,3 +27,7 @@ You can also bump the `minor`, `patch` and a number of other types.  See `bmpr -
 - `--verbose, -v` will give more information as to how **bumper** is working.
 - `--dry-run` will skip the tagging step.
 - `--message, -m` optional message which gets added to the tag.
+
+## Credits and collaboration ##
+
+The lead developer of **bumper** is [Matt Andrews](http://twitter.com/andrewsmatt) at FT Labs. All open source code released by FT Labs is licenced under the MIT licence. We welcome comments, feedback and suggestions.  Please feel free to raise an issue or pull request.
