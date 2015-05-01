@@ -25,7 +25,7 @@ function setUpCommand(level) {
 				dryRun: opts.dryRun
 			})
 				.then(function(annotation) {
-					process.stdout.write(annotation + '\n');
+					console.log(annotation);
 				})
 				.catch(function(err) {
 					logger.error(err);
